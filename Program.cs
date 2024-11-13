@@ -1,4 +1,5 @@
 using Microsoft.OpenApi.Models;
+using UniFatecie___13._11._2024.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +13,10 @@ builder.Services.AddSwaggerGen(options =>
     options.SwaggerDoc("v1", new OpenApiInfo { Title = "UniFatecie API", Version = "v1" });
     options.EnableAnnotations(); // Usado para habilitar as anotações do Swagger
 });
+
+//Serviços
+builder.Services.AddScoped<INovembroService, NovembroService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

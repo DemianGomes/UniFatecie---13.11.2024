@@ -2,6 +2,7 @@ using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 using UniFatecie.Model.AulaNovembro;
+using UniFatecie___13._11._2024.Services;
 
 namespace UniFatecie___13._11._2024.Controllers
 {
@@ -10,10 +11,12 @@ namespace UniFatecie___13._11._2024.Controllers
     public class NovembroController : ControllerBase
     {
         private readonly ILogger<NovembroController> _logger;
+        private readonly INovembroService _service;
 
-        public NovembroController(ILogger<NovembroController> logger)
+        public NovembroController(ILogger<NovembroController> logger, INovembroService service)
         {
             _logger = logger;
+            _service = service;
         }
 
         /// <summary>
@@ -28,16 +31,11 @@ namespace UniFatecie___13._11._2024.Controllers
        [SwaggerOperation(Summary = "Calcula o percentual de ocupação de uma área construída dentro de uma área de terreno.", 
                   Description = "O usuário insere a largura e profundidade da área construída e da área de terreno, e o sistema calcula o percentual de ocupação da área construída em relação à área de terreno.")]
         public PercentualDeOcupacaoResponse GetPercentualDeOcupacao([Required]double larguraAreaConstruida, [Required]double profundidadeAreaConstruida,
-        [Required]double larguraAreaTerreno, [Required]double profundidadeAreaTerreno)
+        [Required]double larguraAreaTerreno, [Required]double profundidadeAreaTerreno, [Required]string zona)
         {
             _logger.LogInformation("Calculando percentual de ocupação...");
 
-            return new PercentualDeOcupacaoResponse
-            {
-                AreaConstruida = larguraAreaConstruida * profundidadeAreaConstruida,
-                AreaTerreno = larguraAreaTerreno * profundidadeAreaTerreno,
-                PercentualDeOcupacao = larguraAreaConstruida * profundidadeAreaConstruida / (larguraAreaTerreno * profundidadeAreaTerreno)
-            };
+            return _service.CalcularPercentualDeOcupacao(larguraAreaConstruida, profundidadeAreaConstruida, larguraAreaTerreno, profundidadeAreaTerreno, zona);
         }
     }
 }
