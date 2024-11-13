@@ -30,3 +30,5 @@ c:\Users\demia\OneDrive\Development\UniFatecie\UniFatecie - 13.11.2024\obj\Debug
 c:\Users\demia\OneDrive\Development\UniFatecie\UniFatecie - 13.11.2024\obj\Debug\net8.0\UniFatecie - 13.11.2024.pdb
 c:\Users\demia\OneDrive\Development\UniFatecie\UniFatecie - 13.11.2024\obj\Debug\net8.0\UniFatecie - 13.11.2024.genruntimeconfig.cache
 c:\Users\demia\OneDrive\Development\UniFatecie\UniFatecie - 13.11.2024\obj\Debug\net8.0\ref\UniFatecie - 13.11.2024.dll
+c:\Users\demia\OneDrive\Development\UniFatecie\UniFatecie - 13.11.2024\obj\Debug\net8.0\UniFatecie - 13.11.2024.sourcelink.json
+c:\Users\demia\OneDrive\Development\UniFatecie\UniFatecie - 13.11.2024\bin\Debug\net8.0\Swashbuckle.AspNetCore.Annotations.dll
