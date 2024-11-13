@@ -1,0 +1,6 @@
+@UniFatecie___13._11._2024_HostAddress = http://localhost:5097
+
+GET {{UniFatecie___13._11._2024_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
