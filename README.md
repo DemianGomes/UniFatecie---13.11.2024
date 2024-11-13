@@ -1,4 +1,13 @@
-Este projeto WebAPI foi criado com o intuito de praticar os enunciados usados pelos professores no meu curso da UniFatecie. Escolhi usar a arquitetura Web API RESTful pois os enunciados são simples a ponto de serem resolvidos em meros endpoints.
-Obviamente, separarei os enunciados por endpoints, e os meses em que foram feitos em controllers.
+# UniFatecie WebAPI Project
 
-Vou usar as branches development e main com o intuito de manter a gestão de código ideal, como se fosse na área profissional. 
+Este projeto WebAPI foi criado com o intuito de praticar os enunciados usados pelos professores no meu curso da UniFatecie. Escolhi usar a arquitetura Web API RESTful, pois os enunciados são simples a ponto de serem resolvidos em meros endpoints.
+
+## Estrutura do Projeto
+
+- **Endpoints**: Cada enunciado será resolvido em um endpoint específico.
+- **Controllers**: Os enunciados serão organizados por mês em controllers separados.
+
+## Gestão de Código
+
+Vou usar as branches `development` e `main` para manter a gestão de código ideal, simulando um ambiente profissional.
+
