@@ -1,4 +1,4 @@
-# UniFatecie WebAPI Project
+# Projeto WebAPI UniFatecie
 
 Este projeto WebAPI foi criado com o intuito de praticar os enunciados usados pelos professores no meu curso da UniFatecie. Escolhi usar a arquitetura Web API RESTful, pois os enunciados são simples a ponto de serem resolvidos em meros endpoints.
 
